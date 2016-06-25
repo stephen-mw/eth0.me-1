@@ -48,8 +48,8 @@ func (s *Eth0Me) Run(protocol string, port int) {
 
 func main() {
 	ports := map[string]int{
-		"HTTP":  8080,
-		"HTTPS": 8081,
+		"HTTP":  80,
+		"HTTPS": 443,
 	}
 
 	wg := &sync.WaitGroup{}
