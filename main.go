@@ -19,7 +19,7 @@ type Eth0Me struct{}
 
 // Root handler
 func (s *Eth0Me) rootHandler(res http.ResponseWriter, req *http.Request) {
-	remote_addr := strings.Split(req.RemoteAddr, ":")[0]
+	remote_addr := strings.Split(req.RemoteAddr, ":")[0] + "\n"
 	log.Printf(rootHandlerMsg, req.Host, req.Method, req.URL, remote_addr)
 	fmt.Fprintf(res, remote_addr)
 }

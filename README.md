@@ -1,6 +1,10 @@
 # eth0.me
 
+## Requires
+Requires the mux library ```go get github.com/gorilla/mux```
+
 server side:
+
 ```bash
 $ go run main.go
 2016/06/24 22:58:35 Runing eth0.me server on port [HTTPS]: 443
